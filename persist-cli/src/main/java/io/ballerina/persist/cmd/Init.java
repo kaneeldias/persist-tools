@@ -104,7 +104,7 @@ public class Init implements BLauncherCmd {
         }
 
         if (datastore == null) {
-            datastore = PersistToolsConstants.SupportedDataSources.IN_MEMORY_TABLE;
+            datastore = PersistToolsConstants.SupportedDataSources.IN_ MEMORY_TABLE;
         } else if (!SUPPORTED_DB_PROVIDERS.contains(datastore)) {
             errStream.printf("ERROR: the persist layer supports one of data stores: %s" +
                     ". but found '%s' datasource.%n", Arrays.toString(SUPPORTED_DB_PROVIDERS.toArray()), datastore);
